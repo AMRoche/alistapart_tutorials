@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>tables</title>
+  <style type="text/css">
+    #playlist li:nth-child(even)  {
+      background-color: #eee;
+    }
+    #playlist li:nth-child(odd)  {
+      background-color: #fff;
+    }
+    #playlist li:hover{
+    	background-color:#aaa;
+    }
+    #JS-playlist .even  {
+      background-color: #eee;
+    }
+    #JS-playlist .odd  {
+      background-color: #fff;
+    }
+    #JS-playlist li:hover{
+    	background-color:#aaa;
+    }
+  </style>
+<body>
+	<h2>Css Styles</h2>
+      <ul id="playlist">
+      	<li>Foo Fighters</li>
+      	<li>Nirvana</li>
+      	<li>Gorillaz</li>
+      	<li>Pink</li>
+      	<li>Pearl Jam</li>
+      	<li>Green Day</li>
+    	<li>Bloc Party</li>
+      	<li>Katy Perry</li>
+      </ul>
+    <h2>Javascript Styles</h2>
+      <ul id="JS-playlist">
+      	<li>Foo Fighters</li>
+      	<li>Nirvana</li>
+      	<li>Gorillaz</li>
+      	<li>Pink</li>
+      	<li>Pearl Jam</li>
+      	<li>Green Day</li>
+    	<li>Bloc Party</li>
+      	<li>Katy Perry</li>
+      </ul>
+    
+</body>
+<script type="text/javascript">
+	var elements = document.getElementById("JS-playlist").childNodes;
+	var domArray = [];
+	for(var i = elements.length-1; i  >= 0; i--){
+		if(elements[i].tagName!=undefined){
+			if(elements[i].tagName.toLowerCase() == "li"){
+				domArray.push(elements[i]);
+			}
+		}
+	}
+	for(var i = 0; i < domArray.length; i++){
+		if(i%2 == 0){
+			domArray[i].className = "even";
+		}
+		else{
+			domArray[i].className = "odd";
+		}
+	}
+</script>
+</html>

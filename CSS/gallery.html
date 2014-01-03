@@ -1,0 +1,41 @@
+<DOCTYPE! html>
+	<html>
+		<head>
+			<style>
+			</style>
+		</head>
+		<body>
+			<p id="desc">
+				Choose an image to begin
+			</p>
+			<img id="placeholder" src="images/loading.gif" alt="" />
+			<ul>
+				<li>
+					<a onclick= "return showPic(this)" href="images/img_gallery1.jpg" title="Image 1">Image 1</a>
+				</li>
+				<li>
+					<a onclick= "return showPic(this)" href="images/img_gallery2.jpg" title="Image 2">Image 2</a>
+				</li>
+				<li>
+					<a onclick= "return showPic(this)" href="images/img_gallery3.jpg" title="Image 3">Image 3</a>
+				</li>
+			</ul>
+		</body>
+		<footer>
+			<script>
+				function showPic(whichpic) {
+					if (document.getElementById) {
+						document.getElementById('placeholder').src = whichpic.href;
+						if (whichpic.title) {
+							document.getElementById('desc').childNodes[0].nodeValue = whichpic.title;
+						} else {
+							document.getElementById('desc').childNodes[0].nodeValue = whichpic.childNodes[0].nodeValue;
+						}
+						return false;
+					} else {
+						return true;
+					}
+				}
+			</script>
+		</footer>
+	</html>

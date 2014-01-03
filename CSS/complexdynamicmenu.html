@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.domenabled #finderparent {
+				position: relative;
+				height: 150px;
+			}
+			.domenabled #finder {
+				position: absolute;
+				top: 1em;
+				left: 1em;
+			}
+			.domenabled ul#finder, .domenabled ul#finder li, .domenabled ul#finder ul {
+				width: 200px;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			.domenabled #finderparent {
+				position: relative;
+				height: 150px;
+			}
+			.domenabled #finder {
+				position: absolute;
+				top: 1em;
+				left: 1em;
+			}
+			.domenabled ul#finder, .domenabled ul#finder li, .domenabled ul#finder ul {
+				width: 200px;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			.domenabled ul#finder ul.hidden {
+				top: 0px;
+				left: -2000px;
+				position: absolute;
+			}
+			.domenabled ul#finder ul.shown {
+				top: 0px;
+				left: 200px;
+				position: absolute;
+			}
+			.domenabled ul#finder li a {
+				color: #000;
+				background: url("images/normal.gif") no-repeat #fff 0 50%;
+				padding-left: 16px;
+				text-decoration: none;
+			}
+			domenabled #finder a.open {
+				background: url("images/arrowon.gif") no-repeat 90% 50% #eee;
+				padding-right: 16px;
+				padding-left: 0px;
+				display: block;
+			}
+			.domenabled #finder a.parent {
+				background: url("images/arrow.gif") no-repeat #fff 100% 50%;
+				padding-right: 16px;
+				padding-left: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="finderparent">
+			<ul id="finder">
+				<li>
+					Main Courses
+					<ul>
+						<li>
+							Burger Meals
+							<ul>
+								<li>
+									Beef
+									<ul>
+										<li>
+											<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=1">Quarter Pounder</a>
+										</li>
+										<li>
+											<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=2">Half Pounder</a>
+										</li>
+										<li>
+											<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=3">Cheese Burger</a>
+										</li>
+										<li>
+											<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=4">Double Burger</a>
+										</li>
+										<li>
+											<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=5">Ranch Burger</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									Chicken
+									<ul>
+										<li>
+											<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=6">Chargrilled Chicken</a>
+										</li>
+										<li>
+											<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=7">Chicken Burger</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									Fish
+									<ul>
+										<li>
+											<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=8">Fish Burger</a>
+										</li>
+										<li>
+											<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=9">Fisherman's Delight</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							Snacks
+							<ul>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=10">Brownies</a>
+								</li>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=11">Cookies</a>
+								</li>
+								<li>
+									Fries
+									<ul>
+										<li>
+											<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=12">Normal Fries</a>
+										</li>
+										<li>
+											<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=13">Cheesy Fries</a>
+										</li>
+										<li>
+											<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=14">Curry Fries</a>
+										</li>
+										<li>
+											<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=15">Curly Fries</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					Drinks
+					<ul>
+						<li>
+							Shakes
+							<ul>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=16">Chocolate Shake</a>
+								</li>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=17">Vanilla Shake</a>
+								</li>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=18">Strawberry Shake</a>
+								</li>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=19">Banana Shake</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							Sodas
+							<ul>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=20">Coke</a>
+								</li>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=21">Lemonade</a>
+								</li>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=22">Sprite</a>
+								</li>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=23">Mountain Dew</a>
+								</li>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=24">Dr.Pepper</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							Cocktails
+							<ul>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=25">Tom Collins</a>
+								</li>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=26">Tequila Sunrise</a>
+								</li>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=27">Sea Breeze</a>
+								</li>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=28">Virgin Mary</a>
+								</li>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=29">Bloody Mary</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							Juices
+							<ul>
+								<li>
+									Apple
+									<ul>
+										<li>
+											<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=30">Natural Apple Juice</a>
+										</li>
+										<li>
+											<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=31">Clear Apple Juice</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=32">Orange</a>
+								</li>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=33">Cranberry</a>
+								</li>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=34">Kiwi</a>
+								</li>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=35">Pineapple</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					Salads
+					<ul>
+						<li>
+							<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=36">Tuna Salad</a>
+						</li>
+						<li>
+							<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=37">Cesar Salad</a>
+						</li>
+						<li>
+							<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=38">Green Salad</a>
+						</li>
+						<li>
+							<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=39">Prawn Salad</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					Deserts
+					<ul>
+						<li>
+							Pancakes
+							<ul>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=40">Short Pancake Stack</a>
+								</li>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=41">Long Pancake Stack</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							Waffles
+							<ul>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=42">Waffles with ice cream</a>
+								</li>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=43">Waffles with syrup</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							Ice Cream
+							<ul>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=44">Mixed Cup</a>
+								</li>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?a=45">Banana Split</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							Fresh Fruit
+							<ul>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?add=46">Melon Medley</a>
+								</li>
+								<li>
+									<a href="/web/20050526021305/http://www.alistapart.com/d/complexdynamiclists/order.php?add=47">Seasonal Fruit</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+	</body>
+	<footer>
+		<script>
+			function ul2finder() {
+				// Define variables used and classes to be applied/removed
+				var i, uls, als, finder;
+				var parentClass = 'parent';
+				var showClass = 'shown';
+				var hideClass = 'hidden';
+				var openClass = 'open';
+
+				// check if our finder list exists, if not, stop all activities
+				finder = document.getElementById('finder');
+				if (!finder) {
+					return;
+				}
+
+				// add the class domenabled to the body
+				cssjs('add', document.body, 'domenabled')
+
+				// loop through all lists inside finder, position and hide them
+				// by applying the class hidden
+				uls = document.getElementById('finder').getElementsByTagName('ul');
+				for ( i = 0; i < uls.length; i++) {
+					cssjs('add', uls[i], hideClass);
+				}
+
+				// loop through all links of inside finder
+				lis = document.getElementById('finder').getElementsByTagName('li');
+				for ( i = 0; i < lis.length; i++) {
+					// if the li containing the link has no nested list, skip this one
+					if (!lis[i].getElementsByTagName('ul')[0]) {
+
+						continue;
+					}
+					var newa = document.createElement('a');
+					newa.href = '#';
+					newa.appendChild(document.createTextNode(lis[i].firstChild.nodeValue));
+					lis[i].replaceChild(newa, lis[i].firstChild);
+					// otherwise apply the parent class
+					cssjs('add', newa, parentClass);
+
+					// if the user clicks on the link
+					lis[i].getElementsByTagName('a')[0].onclick = function() {
+						// loop through all lists inside finder
+						for (var i = 0; i < uls.length; i++) {
+							// avoid the list connected to this link
+							var found = false;
+							for ( j = 0; j < uls[i].getElementsByTagName('ul').length; j++) {
+								if (uls[i].getElementsByTagName('ul')[j] == this.parentNode.getElementsByTagName('ul')[0]) {
+									found = true;
+									break;
+								}
+							}
+							// and hide all others
+							if (!found) {
+								cssjs('add', uls[i], hideClass)
+								cssjs('remove', uls[i], showClass)
+								cssjs('remove', uls[i].parentNode.getElementsByTagName('a')[0], openClass)
+								cssjs('add', uls[i].parentNode.getElementsByTagName('a')[0], parentClass)
+							}
+						}
+						// change the current link from parent to open
+						cssjs('swap', this, parentClass, openClass)
+						// show the current nested list
+						cssjs('add', this.parentNode.getElementsByTagName('ul')[0], showClass)
+
+						// don't follow the real HREF of the link
+						return false;
+					}
+				}
+				/*
+				 * cssjs
+				 * written by Christian Heilmann (/web/20050527011209/http://icant.co.uk)
+				 * eases the dynamic application of CSS classes via DOM
+				 * parameters: action a, object o and class names c1 and c2 (c2 optional)
+				 * actions: swap exchanges c1 and c2 in object o
+				 *			add adds class c1 to object o
+				 *			remove removes class c1 from object o
+				 *			check tests if class c1 is applied to object o
+				 * example:	cssjs('swap',document.getElementById('foo'),'bar','baz');
+				 */
+				function cssjs(a, o, c1, c2) {
+					switch (a) {
+						case 'swap':
+							o.className = !cssjs('check', o, c1) ? o.className.replace(c2, c1) : o.className.replace(c1, c2);
+							break;
+						case 'add':
+							if (!cssjs('check', o, c1)) {
+								o.className += o.className ? ' ' + c1 : c1;
+							}
+							break;
+						case 'remove':
+							var rep = o.className.match(' ' + c1) ? ' ' + c1 : c1;
+							o.className = o.className.replace(rep, '');
+							break;
+						case 'check':
+							return new RegExp('\\b' + c1 + '\\b').test(o.className)
+							break;
+					}
+				}
+
+			}
+
+			// Check if the browser supports DOM, and start the script if it does.
+			if (document.getElementById && document.createTextNode) {
+				window.onload = ul2finder;
+			}
+
+		</script>
+	</footer>
+</html>
