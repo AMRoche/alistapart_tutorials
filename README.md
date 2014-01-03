@@ -1,7 +1,9 @@
 #A List Apart CSS Tutorials
+
 1. 
   - **Sliding Doors of CSS**
   - [http://alistapart.com/article/slidingdoors](http://alistapart.com/article/slidingdoors)
+  - How to use images instead of  CSS to acommodate variable width text to create custom shapes etc.
 2. 
   - **Sliding Doors of CSS, Part II**
   - [http://alistapart.com/article/slidingdoors2](http://alistapart.com/article/slidingdoors2)
