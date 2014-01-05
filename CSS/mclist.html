@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<style type="text/css">
+ .columns li{width:10em;}
+ .columns li.reset
+  {
+    margin-top: -2.5em;
+  }
+ .columns li.column1 { margin-left: 0em; }
+ .columns li.column2 { margin-left: 10em; }
+ .columns li.column3 { margin-left: 20em; }
+	.floatleft{
+		max-width:300px;
+		float:left;
+	}
+	.floatleft li{
+		float:left;
+		width:100px;
+	}
+	.floatleft li:hover{
+		background-color:#222;
+	}
+
+div .wrapper ol
+  {
+  	float:left;
+    width: 10em;
+  }  /* float & allow room for the widest item */
+  div .wrapper ol li
+  {
+    float: left;
+    width: 10em;
+  }  /* stop the float */
+  ol li a {
+display: block;
+width: 7em;
+text-decoration: none;
+}
+ol li a:hover{
+	background-color:pink;
+}
+  div .wrapper br
+  {
+    clear: left;
+  }  /* separate the list from subsequent markup */
+  div.wrapper {
+  	float:left;
+width: 10em;
+}
+  div{
+  	float:left;
+  }
+
+
+  div.listwrap{
+  	clear:left;
+  	position:relative;
+  }
+
+</style>
+</head>
+<body>
+<h2>Wrapping the list using float:left</h2>
+<ol class="floatleft">
+  <li>Aloe</li>
+  <li>Bergamot</li>
+  <li>Calendula</li>
+    <li>Aloe</li>
+  <li>Bergamot</li>
+  <li>Calendula</li>
+  <li>Aloe</li>
+  <li>Bergamot</li>
+  <li>Calendula</li>
+</ol>
+<h2>Wrapping a list using wrappers for columns</h2>
+<div>
+	<div class="wrapper">
+		<ol><li><a href="#">Aloe</a></li><li><a href="#">Bergamot</a></li><li><a href="#">Calendula</a></li><li><a href="#">Damiana</a></li><li><a href="#">Elderflower</a></li></ol>
+	</div>
+	<div class="wrapper">
+		<ol start="6"><li><a href="#">Feverfew</a></li><li><a href="#">Ginger</a></li><li><a href="#">Hops</a></li><li><a href="#">Iris</a></li><li><a href="#">Juniper</a></li></ol>
+	</div>
+	<div class="wrapper">
+		<ol><li value="11"><a href="#">Kava kava</a></li><li><a href="#">Lavender</a></li><li><a href="#">Marjoram</a></li><li><a href="#">Nutmeg</a></li><li><a href="#">Oregano</a></li><li><a href="#">Pennyroyal</a></li></ol>
+	</div>
+	<br>
+</div>
+<h2> Wrapping a list with margins </h2>
+<div>
+<ol class="columns"
+    ><li class="column1">item</li
+    ><li class="column1">item</li    »
+    ><li class="column2 reset">item</li
+    ><li class="column2">item</li    »
+    ><li class="column3 reset">item</li
+    ><li class="column3">item</li
+  ></ol>
+</div>
+</body>
+</html>
